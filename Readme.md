@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 - Студент: [Александр Суходолов](https://up.htmlacademy.ru/adaptive/19/user/1173469).
-- Наставник: [Виктор Кан](https://htmlacademy.ru/profile/viktorkan).
+- Наставник: [Виктор Кан - супер наставник](https://htmlacademy.ru/profile/viktorkan).
 
 ---
 
