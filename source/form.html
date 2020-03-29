@@ -65,38 +65,52 @@
             </fieldset>
             <fieldset class="form__item">
                <legend class="form__title">Контактная информация:</legend>
-               <label class="form__label" for="tel">
-                  <span class="form__caption">Контактный телефон*:</span>
-                  <span class="form__input-wrapper">
+               <div class="form__input-wrapper">
+                  <label class="form__label" for="tel">
+                     <span class="form__caption">Контактный телефон*:</span>
                      <input class="form__input" id="tel" type="tel" name="tel" placeholder="Введите телефон" required>
-                  </span>
-               </label>
-               <label class="form__label" for="email">
-                  <span class="form__caption">Электронная почта*:</span>
-                  <span class="form__input-wrapper">
+                  </label>
+               </div>
+               <div class="form__input-wrapper">
+                  <label class="form__label" for="email">
+                     <span class="form__caption">Электронная почта*:</span>
                      <input class="form__input" id="email" type="email" name="email" placeholder="Введите e-mail" required>
-                  </span>
-               </label>
+                  </label>
+               </div>
             </fieldset>
             <fieldset class="form__item">
                <legend class="form__title">Ваше общее впечатление:</legend>
-               <input class="form__input" id="good" type="radio" name="impression" value="good" checked>
-               <label class="form__label" for="good">Скорее положительное</label>
-               <input class="form__input" id="bad" type="radio" name="impression" value="bad">
-               <label class="form__label" for="bad">Скорее отрицательное</label>
-               <input class="form__input" id="dunno" type="radio" name="impression" value="dunno">
-               <label class="form__label" for="dunno">Затрудняюсь ответить</label>
+               <div class="form__wrapper">
+                  <input class="form__input" id="good" type="radio" name="impression" value="good" checked>
+                  <label class="form__label" for="good">Скорее положительное</label>
+               </div>
+               <div class="form__wrapper">
+                  <input class="form__input" id="bad" type="radio" name="impression" value="bad">
+                  <label class="form__label" for="bad">Скорее отрицательное</label>
+               </div>
+               <div class="form__wrapper">
+                  <input class="form__input" id="dunno" type="radio" name="impression" value="dunno">
+                  <label class="form__label" for="dunno">Затрудняюсь ответить</label>
+               </div>
             </fieldset>
             <fieldset class="form__item">
                <legend class="form__title">Посещенные достопримечательности:</legend>
-               <input class="form__input" id="devil" type="checkbox" name="devil" value="visit">
-               <label class="form__label" for="devil">Мост Дьявола</label>
-               <input class="form__input" id="slide" type="checkbox" name="slide" value="visit">
-               <label class="form__label" for="slide">Слайд-парк</label>
-               <input class="form__input" id="bell-mountain" type="checkbox" name="bell-mountain" value="visit">
-               <label class="form__label" for="bell-mountain">Гора-Колокол</label>
-               <input class="form__input" id="red-rocks" type="checkbox" name="red-rocks" value="visit">
-               <label class="form__label" for="red-rocks">Красные скалы</label>
+               <div class="form__wrapper">
+                  <input class="form__input" id="devil" type="checkbox" name="devil" value="visit">
+                  <label class="form__label" for="devil">Мост Дьявола</label>
+               </div>
+               <div class="form__wrapper">
+                  <input class="form__input" id="slide" type="checkbox" name="slide" value="visit">
+                  <label class="form__label" for="slide">Слайд-парк</label>
+               </div>
+               <div class="form__wrapper">
+                  <input class="form__input" id="bell-mountain" type="checkbox" name="bell-mountain" value="visit">
+                  <label class="form__label" for="bell-mountain">Гора-Колокол</label>
+               </div>
+               <div class="form__wrapper">
+                  <input class="form__input" id="red-rocks" type="checkbox" name="red-rocks" value="visit">
+                  <label class="form__label" for="red-rocks">Красные скалы</label>
+               </div>
             </fieldset>
             <fieldset class="form__item">
                <legend class="form__title">Опишите свои эмоции:</legend>
