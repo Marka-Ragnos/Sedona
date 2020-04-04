@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="description" content="Sedona" />
   <meta name="keywords" content="Sedona, поиск гостиниц">
+  <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Седона</title>
 </head>
 
@@ -12,14 +13,14 @@
   <div class="container">
     <header class="page-header">
       <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="102" height="83" alt="City of Sedona">
+        <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="City of Sedona">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Закрыть меню</button>
+        <button class="main-nav__toggle main-nav__toggle--close" type="button"></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
-              <a>главная</a>
+              <a href="index.html">главная</a>
             </li>
             <li class="site-list__item">
               <a href="photo.html">фото и видео</a>
@@ -38,7 +39,7 @@
       <h1 class="visually-hidden">Sedona, поиск гостиниц</h1>
       <section class="intro">
         <div class="intro__header">
-          <img class="intro__picture" src="img/intro.svg" width="100" height="100" alt="Welcome">
+          <img class="intro__picture" src="img/text-sedona-index.svg" width="281" height="214" alt="Welcome">
         </div>
       </section>
       <section class="prologue">
@@ -47,11 +48,13 @@
       </section>
       <section class="reasons">
         <div class="reasons__big-item">
-          <div class="reasons__big-title">Настоящий городок</div>
-          <div class="reasons__big-number">&#8212; №1 &#8212;</div>
-          <div class="reasons__big-text">Седона не аттракцион для туристов, там течет своя жизнь</div>
+          <div class="reasons__text-wrapper">
+            <h3 class="reasons__big-title">Настоящий городок</h3>
+            <p class="reasons__big-number">&#8212; №1 &#8212;</p>
+            <p class="reasons__big-text">Седона не аттракцион для туристов, там течет своя жизнь</p>
+          </div>
           <div class="reasons__image">
-            <img class="reasons__image-city" src="img/city.png" width="100" height="100" alt="City">
+            <img class="reasons__image-city" src="img/main-city-mobile@1x.jpg" width="320" height="260" alt="City">
           </div>
         </div>
         <ul class="feature">
@@ -65,7 +68,7 @@
           </li>
           <li class="feature__item feature__item--food">
             <b class="feature__title">Еда</b>
-            <p class="feature__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            <p class="feature__text">Всегда заказывайте<br> фирменный бургер, вы не разочаруетесь!</p>
           </li>
         </ul>
         <div class="reasons__big-item">
@@ -127,4 +130,5 @@
     </footer>
   </div>
 </body>
+
 </html>

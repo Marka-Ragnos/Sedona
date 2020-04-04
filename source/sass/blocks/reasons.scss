@@ -1,0 +1,47 @@
+.reasons {
+  position: relative;
+}
+.reasons::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 42px;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-size: auto 42px;
+  background-position: center bottom;
+  background-image: url(../img/bg-triangle.svg);
+}
+.reasons__big-item {
+  @include bgc($blue);
+}
+.reasons__text-wrapper {
+  margin: 0 auto;
+  width: 265px;
+  color: white;
+  text-align: center;
+  line-height: 26px;
+}
+.reasons__big-title {
+  margin: 0;
+  padding-top: 81px;
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  line-height: 1.44;
+  letter-spacing: normal;
+}
+.reasons__big-number {
+  margin: 0;
+  padding-top: 8px;
+}
+.reasons__big-text {
+  margin: 0;
+  padding-top: 8px;
+  padding-bottom: 35px;
+}
+.reasons__image {
+  width: 320px;
+  height: 260px;
+}

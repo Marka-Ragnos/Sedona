@@ -1,0 +1,26 @@
+.site-list {
+  @include bgc($blue);
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 40px;
+  letter-spacing: normal;
+}
+
+.site-list__item {
+  box-shadow: 0px 1px 0 0 rgba(1, 1, 1, 0.2),
+    inset 0px 1px 0 0 rgba(255, 255, 255, 0.2);
+  min-height: 56px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.site-list__item a {
+  color: white;
+}
+
+.site-list__item--active {
+}
