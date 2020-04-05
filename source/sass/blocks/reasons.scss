@@ -21,27 +21,44 @@
   width: 265px;
   color: white;
   text-align: center;
-  line-height: 26px;
 }
 .reasons__big-title {
   margin: 0;
-  padding-top: 81px;
   font-size: 18px;
   font-weight: bold;
   font-stretch: normal;
   line-height: 1.44;
   letter-spacing: normal;
+  &--1 {
+    padding-top: 81px;
+  }
+  &--2 {
+    margin-top: 37px;
+    padding-top: 38px;
+  }
 }
 .reasons__big-number {
   margin: 0;
-  padding-top: 8px;
+  padding-top: 11px;
+  line-height: 21px;
 }
 .reasons__big-text {
   margin: 0;
-  padding-top: 8px;
-  padding-bottom: 35px;
+  padding-top: 15px;
+  padding-bottom: 40px;
+  line-height: 21px;
 }
 .reasons__image {
   width: 320px;
   height: 260px;
+}
+.reasons__image-city {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.reasons__image-bridge {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
