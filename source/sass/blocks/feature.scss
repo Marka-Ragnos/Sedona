@@ -2,6 +2,7 @@
   @include list-none;
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 37px;
 }
 .feature__item {
   display: flex;
@@ -13,7 +14,7 @@
     &::before {
       content: "";
       position: absolute;
-      background-image: url(../../img/icon-house.svg);
+      background-image: url(../img/icon-house.svg);
       width: 37px;
       height: 36px;
       background-repeat: no-repeat;
@@ -28,7 +29,7 @@
     &::before {
       content: "";
       position: absolute;
-      background-image: url(../../img/icon-gift.svg);
+      background-image: url(../img/icon-gift.svg);
       width: 32px;
       height: 38px;
       background-repeat: no-repeat;
@@ -43,7 +44,7 @@
     &::before {
       content: "";
       position: absolute;
-      background-image: url(../../img/icon-burger.svg);
+      background-image: url(../img/icon-burger.svg);
       width: 40px;
       height: 35px;
       background-repeat: no-repeat;
@@ -59,6 +60,7 @@
   font-stretch: normal;
   font-style: normal;
   line-height: 26px;
+  color: black;
 }
 .feature__text {
   margin: 0;

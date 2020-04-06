@@ -14,7 +14,7 @@
   background-image: url(../img/bg-triangle.svg);
 }
 .reasons__big-item {
-  @include bgc($blue);
+  background-color: $blue;
 }
 .reasons__text-wrapper {
   margin: 0 auto;
@@ -33,7 +33,6 @@
     padding-top: 81px;
   }
   &--2 {
-    margin-top: 37px;
     padding-top: 38px;
   }
 }
@@ -61,4 +60,43 @@
   object-fit: cover;
   width: 100%;
   height: 100%;
+}
+.reasons__grey-wrapper {
+  background-color: #eee;
+  text-align: center;
+}
+.reasons__item {
+  position: relative;
+  margin: 0 auto;
+  width: 246px;
+  &::after {
+    content: "";
+    width: 280px;
+    height: 1px;
+    position: absolute;
+    bottom: 169px;
+    left: -5.2%;
+    background-color: black;
+    opacity: 0.1;
+  }
+}
+.reasons__title {
+  margin: 0;
+  padding-top: 25px;
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  line-height: 1.44;
+  letter-spacing: normal;
+}
+.reasons__number {
+  margin: 0;
+  padding-top: 11px;
+  line-height: 21px;
+}
+.reasons__text {
+  margin: 0;
+  padding-top: 15px;
+  padding-bottom: 29px;
+  line-height: 21px;
 }

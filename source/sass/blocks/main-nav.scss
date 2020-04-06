@@ -1,7 +1,6 @@
 .main-nav {
   position: relative;
 }
-
 // .main-nav__toggle {
 //   background-image: url(../img/icon-cross.svg);
 //   width: 23px;
@@ -13,7 +12,6 @@
 //   top: 7%;
 //   border: 0;
 // }
-
 .main-nav__toggle {
   background-image: url(../img/icon-menu.svg);
   width: 23px;
@@ -25,9 +23,6 @@
   top: 107%;
   border: 0;
 }
-.main-nav__wrapper {
-}
-
 .main-nav__list {
   @include list-none;
 }

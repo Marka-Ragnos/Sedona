@@ -1,5 +1,5 @@
 .site-list {
-  @include bgc($blue);
+  background-color: $blue;
   font-size: 18px;
   font-weight: bold;
   font-stretch: normal;
@@ -20,7 +20,4 @@
 
 .site-list__item a {
   color: white;
-}
-
-.site-list__item--active {
 }
