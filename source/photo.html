@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="Sedona">
+  <meta name="description" content="Sedona" />
   <meta name="keywords" content="Sedona, поиск гостиниц">
   <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Седона</title>
@@ -13,13 +13,13 @@
   <div class="container">
     <header class="page-header">
       <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="102" height="83" alt="City of Sedona">
+        <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="City of Sedona">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Закрыть меню</button>
+        <button class="main-nav__toggle main-nav__toggle--open" type="button"></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
+            <li class="site-list__item">
               <a href="index.html">главная</a>
             </li>
             <li class="site-list__item">
@@ -39,7 +39,7 @@
       <h1 class="visually-hidden">Sedona, фотографии</h1>
       <section class="intro">
         <div class="intro__header">
-          <img class="intro__picture" src="img/intro.svg" width="100" height="100" alt="Welcome">
+          <img class="intro__picture" src="img/text-sedona.svg" width="229" height="39" alt="Welcome">
         </div>
       </section>
       <section class="prologue">
@@ -50,54 +50,62 @@
         <div class="photo__box">
           <figure class="photo__item">
             <a class="photo__link" href="#">
-              <img class="photo__picture" src="https://via.placeholder.com/150x150" width="100" height="100" alt="Open spaces">
+              <img class="photo__picture" src="img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Open spaces">
             </a>
             <figcaption>
               <b class="photo__text">Неродные просторы</b>
               <p class="photo__author">Автор фото: Борис</p>
             </figcaption>
           </figure>
-          <button class="photo__like" type="button">Like</button>
-          <p><b>1350</b></p>
+          <div class="photo__wrapper">
+            <button class="photo__like" type="button">Like</button>
+            <p class="photo__counter">1350</p>
+          </div>
         </div>
         <div class="photo__box">
           <figure class="photo__item">
             <a class="photo__link" href="#">
-              <img class="photo__picture" src="https://via.placeholder.com/150x150" width="100" height="100" alt="Native vegetation">
+              <img class="photo__picture" src="img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="Native vegetation">
             </a>
             <figcaption>
               <b class="photo__text">Местная растительность</b>
               <p class="photo__author">Автор фото: Сергей</p>
             </figcaption>
           </figure>
-          <button class="photo__like" type="button">Like</button>
-          <p><b>143</b></p>
+          <div class="photo__wrapper">
+            <button class="photo__like" type="button">Like</button>
+            <p class="photo__counter">143</p>
+          </div>
         </div>
         <div class="photo__box">
           <figure class="photo__item">
             <a class="photo__link" href="#">
-              <img class="photo__picture" src="https://via.placeholder.com/150x150" width="100" height="100" alt="The road to the North">
+              <img class="photo__picture" src="img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="The road to the North">
             </a>
             <figcaption>
               <b class="photo__text">Дорога на Север</b>
               <p class="photo__author">Автор фото: Петр</p>
             </figcaption>
           </figure>
-          <button class="photo__like" type="button">Like</button>
-          <p><b>96</b></p>
+          <div class="photo__wrapper">
+            <button class="photo__like" type="button">Like</button>
+            <p class="photo__counter">96</p>
+          </div>
         </div>
         <div class="photo__box">
           <figure class="photo__item">
             <a class="photo__link" href="#">
-              <img class="photo__picture devil-bridge" src="https://via.placeholder.com/150x150" width="100" height="100" alt="Devil's Bridge">
+              <img class="photo__picture devil-bridge" src="img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="Devil's Bridge">
             </a>
             <figcaption>
               <b class="photo__text">Мост Дьявола</b>
               <p class="photo__author">Автор фото: Антон</p>
             </figcaption>
           </figure>
-          <button class="photo__like" type="button">Like</button>
-          <p><b>254</b></p>
+          <div class="photo__wrapper">
+            <button class="photo__like" type="button">Like</button>
+            <p class="photo__counter">254</p>
+          </div>
         </div>
         <section class="doubts">
           <header class="doubts__header">
@@ -106,14 +114,14 @@
               раз!</p>
           </header>
           <div class="video">
-            <video class="video__my" width="100" height="100" preload="none" poster="#">
+            <video class="video__my" width="320" height="200" preload="none" poster="img/video-mobile@1x.jpg">
               <source src="#" type="video/mp4">
               <source src="#" type="video/webm">
               <source src="#" type="video/ogg">
               <p>Please update your browser to watch this video</p>
             </video>
             <div class="video__controls">
-              <button class="video__btn replay-btn">
+              <button class="video__btn video__btn--replay">
                 <svg width="30" height="20">
                   <use xlink:href="#"></use>
                 </svg>
@@ -125,12 +133,12 @@
                   </div>
                 </div>
               </div>
-              <button class="video__btn subtitle-btn">
+              <button class="video__btn video__btn--subtitle">
                 <svg width="30" height="20">
                   <use xlink:href="#"></use>
                 </svg>
               </button>
-              <button class="video__btn fullscreen-btn">
+              <button class="video__btn video__btn--fullscreen">
                 <svg width="20" height="20">
                   <use xlink:href="#"></use>
                 </svg>

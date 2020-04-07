@@ -17,7 +17,9 @@
   justify-content: center;
   align-content: center;
 }
-
 .site-list__item a {
   color: white;
+}
+.site-list__item--active a {
+  cursor: default;
 }

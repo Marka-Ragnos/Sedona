@@ -1,3 +1,11 @@
 .map {
   margin-top: 49px;
+  position: relative;
+}
+.map__static {
+  position: absolute;
+  width: 320px;
+  height: 350px;
+  left: 0;
+  z-index: -1;
 }

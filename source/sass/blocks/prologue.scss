@@ -1,11 +1,15 @@
 .prologue {
   text-align: center;
-  width: 255px;
+  width: 270px;
   margin: 0 auto;
+  &--main {
+    width: 255px;
+  }
+  margin-bottom: 28px;
 }
 .prologue__slogan {
   margin: 0;
-  padding-top: 40px;
+  padding-top: 37px;
   font-size: 18px;
   font-weight: bold;
   font-stretch: normal;
@@ -13,9 +17,16 @@
   line-height: 1.44;
   letter-spacing: normal;
   color: black;
+  &--main {
+    padding-top: 40px;
+  }
 }
 .prologue__intro {
   margin: 0;
-  padding-top: 29px;
-  line-height: 26px;
+  padding-top: 27px;
+  line-height: 24px;
+  &--main {
+    line-height: 26px;
+    padding-top: 29px;
+  }
 }

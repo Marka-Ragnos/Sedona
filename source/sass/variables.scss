@@ -1,9 +1,5 @@
 $blue: #81b3d2;
-// @mixin text-align {
-//   text-align: center;
-//   vertical-align: middle;
-// }
-@mixin list-none {
+@mixin reset-list {
   list-style: none;
   margin: 0;
   padding: 0;

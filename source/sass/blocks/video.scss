@@ -1,0 +1,55 @@
+.video {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 36px;
+  position: relative;
+}
+.video__controls {
+  position: relative;
+  width: 280px;
+  height: 66px;
+  margin: 0 auto;
+  padding: 22px;
+  z-index: 1;
+  background-color: #f2f2f2;
+}
+.video__seek-wrapper {
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  min-height: 45px;
+  top: -45px;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 0 22px;
+}
+.video__seek {
+  cursor: pointer;
+  padding: 23px 0 20px;
+}
+.video__scale {
+  height: 3px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.video__bar {
+  height: 2px;
+  width: 40px;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    right: -5px;
+    top: -3px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: #fff;
+  }
+}
+.video__btn {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  fill: #5c6870;
+  vertical-align: top;
+}
