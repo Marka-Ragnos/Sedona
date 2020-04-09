@@ -18,7 +18,7 @@
   position: absolute;
   width: 100%;
   min-height: 45px;
-  top: -45px;
+  top: -46px;
   left: 0;
   background-color: rgba(0, 0, 0, 0.6);
   padding: 0 22px;
@@ -50,6 +50,15 @@
   background-color: transparent;
   border: none;
   padding: 0;
-  fill: #5c6870;
   vertical-align: top;
+  font-size: 0;
+  fill: #5c6870;
+  &--replay {
+    margin-left: 3px;
+    margin-right: 130px;
+  }
+  &--subtitle {
+    margin-right: 27px;
+  }
 }
+
