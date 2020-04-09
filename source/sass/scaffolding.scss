@@ -23,6 +23,19 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  background-color: #ffffff;
+  color: #333333;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  letter-spacing: normal;
+  line-height: 1.5;
+  margin: 0;
+  overflow-x: hidden;
+  text-transform: uppercase;
+}
+
 img {
   height: auto;
   max-width: 100%;

@@ -7,28 +7,17 @@
   position: relative;
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
+  padding-top: 21px;
+  padding-bottom: 17px;
+  border-bottom: 1px solid #e5e5e5;
+  &--top {
+    border-top: 1px solid #e5e5e5;
+  }
+}
+.photo__box-wrapper {
   width: 280px;
   margin: 0 auto;
-  padding-top: 22px;
-  padding-bottom: 17px;
-  &:first-child::before {
-    content: "";
-    width: 320px;
-    height: 1px;
-    background-color: rgba(0, 0, 0, 0.1);
-    position: absolute;
-    top: 0;
-    left: -7%;
-  }
-  &::after {
-    content: "";
-    width: 320px;
-    height: 1px;
-    background-color: rgba(0, 0, 0, 0.1);
-    position: absolute;
-    bottom: 0;
-    left: -7%;
-  }
 }
 .photo__item {
   display: flex;
