@@ -3,8 +3,9 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="Sedona">
+  <meta name="description" content="Sedona" />
   <meta name="keywords" content="Sedona, поиск гостиниц">
+  <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Седона</title>
 </head>
 
@@ -12,14 +13,14 @@
   <div class="container">
     <header class="page-header">
       <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="102" height="83" alt="City of Sedona">
+        <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="City of Sedona">
       </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Закрыть меню</button>
+      <nav class="main-nav main-nav--nojs">
+        <button class="main-nav__toggle main-nav__toggle--open" type="button"></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a>главная</a>
+            <li class="site-list__item">
+              <a href="index.html">главная</a>
             </li>
             <li class="site-list__item">
               <a href="photo.html">фото и видео</a>
@@ -38,7 +39,7 @@
       <h1 class="visually-hidden">Sedona, фотографии</h1>
       <section class="intro">
         <div class="intro__header">
-          <img class="intro__picture" src="img/intro.svg" width="100" height="100" alt="Welcome">
+          <img class="intro__picture" src="img/text-sedona.svg" width="229" height="39" alt="Welcome">
         </div>
       </section>
       <section class="prologue">
@@ -46,57 +47,73 @@
         <p class="prologue__intro">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
       </section>
       <section class="photo">
-        <div class="photo__box">
-          <figure class="photo__item">
-            <a class="photo__link" href="#">
-              <img class="photo__picture" src="https://via.placeholder.com/150x150" width="100" height="100" alt="Open spaces">
-            </a>
-            <figcaption>
-              <b class="photo__text">Неродные просторы</b>
-              <p class="photo__author">Автор фото: Борис</p>
-            </figcaption>
-          </figure>
-          <button class="photo__like" type="button">Like</button>
-          <p><b>1350</b></p>
+        <div class="photo__box photo__box--top">
+          <div class="photo__box-wrapper">
+            <figure class="photo__item">
+              <a class="photo__link" href="#">
+                <img class="photo__picture" src="img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Open spaces">
+              </a>
+              <figcaption>
+                <b class="photo__text">Неродные просторы</b>
+                <p class="photo__author">Автор фото: Борис</p>
+              </figcaption>
+            </figure>
+            <div class="photo__wrapper">
+              <button class="photo__like" type="button">Like</button>
+              <p class="photo__counter">1350</p>
+            </div>
+          </div>
         </div>
         <div class="photo__box">
-          <figure class="photo__item">
-            <a class="photo__link" href="#">
-              <img class="photo__picture" src="https://via.placeholder.com/150x150" width="100" height="100" alt="Native vegetation">
-            </a>
-            <figcaption>
-              <b class="photo__text">Местная растительность</b>
-              <p class="photo__author">Автор фото: Сергей</p>
-            </figcaption>
-          </figure>
-          <button class="photo__like" type="button">Like</button>
-          <p><b>143</b></p>
+          <div class="photo__box-wrapper">
+            <figure class="photo__item">
+              <a class="photo__link" href="#">
+                <img class="photo__picture" src="img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="Native vegetation">
+              </a>
+              <figcaption>
+                <b class="photo__text">Местная растительность</b>
+                <p class="photo__author">Автор фото: Сергей</p>
+              </figcaption>
+            </figure>
+            <div class="photo__wrapper">
+              <button class="photo__like" type="button">Like</button>
+              <p class="photo__counter">143</p>
+            </div>
+          </div>
         </div>
         <div class="photo__box">
-          <figure class="photo__item">
-            <a class="photo__link" href="#">
-              <img class="photo__picture" src="https://via.placeholder.com/150x150" width="100" height="100" alt="The road to the North">
-            </a>
-            <figcaption>
-              <b class="photo__text">Дорога на Север</b>
-              <p class="photo__author">Автор фото: Петр</p>
-            </figcaption>
-          </figure>
-          <button class="photo__like" type="button">Like</button>
-          <p><b>96</b></p>
+          <div class="photo__box-wrapper">
+            <figure class="photo__item">
+              <a class="photo__link" href="#">
+                <img class="photo__picture" src="img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="The road to the North">
+              </a>
+              <figcaption>
+                <b class="photo__text">Дорога на Север</b>
+                <p class="photo__author">Автор фото: Петр</p>
+              </figcaption>
+            </figure>
+            <div class="photo__wrapper">
+              <button class="photo__like" type="button">Like</button>
+              <p class="photo__counter">96</p>
+            </div>
+          </div>
         </div>
         <div class="photo__box">
-          <figure class="photo__item">
-            <a class="photo__link" href="#">
-              <img class="photo__picture devil-bridge" src="https://via.placeholder.com/150x150" width="100" height="100" alt="Devil's Bridge">
-            </a>
-            <figcaption>
-              <b class="photo__text">Мост Дьявола</b>
-              <p class="photo__author">Автор фото: Антон</p>
-            </figcaption>
-          </figure>
-          <button class="photo__like" type="button">Like</button>
-          <p><b>254</b></p>
+          <div class="photo__box-wrapper">
+            <figure class="photo__item">
+              <a class="photo__link" href="#">
+                <img class="photo__picture devil-bridge" src="img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="Devil's Bridge">
+              </a>
+              <figcaption>
+                <b class="photo__text">Мост Дьявола</b>
+                <p class="photo__author">Автор фото: Антон</p>
+              </figcaption>
+            </figure>
+            <div class="photo__wrapper">
+              <button class="photo__like" type="button">Like</button>
+              <p class="photo__counter">254</p>
+            </div>
+          </div>
         </div>
         <section class="doubts">
           <header class="doubts__header">
@@ -105,16 +122,23 @@
               раз!</p>
           </header>
           <div class="video">
-            <video class="video__my" width="100" height="100" preload="none" poster="#">
+            <video class="video__my" width="320" height="200" preload="none" poster="img/video-mobile@1x.jpg">
               <source src="#" type="video/mp4">
               <source src="#" type="video/webm">
               <source src="#" type="video/ogg">
               <p>Please update your browser to watch this video</p>
             </video>
             <div class="video__controls">
-              <button class="video__btn replay-btn">
-                <svg width="30" height="20">
-                  <use xlink:href="#"></use>
+              <button class="video__btn video__btn--replay">replay
+                <svg width="16" height="20" xmlns="http://www.w3.org/2000/svg">
+                  <g>
+                    <title>background</title>
+                    <rect fill="none" height="402" width="582" y="-1" x="-1" />
+                  </g>
+                  <g>
+                    <title>Layer 1</title>
+                    <path d="m8,4l0,-4l-5,5l5,5l0,-4c3.315,0 6,2.686 6,6s-2.685,6 -6,6s-6,-2.686 -6,-6l-2,0c0,4.42 3.58,8 8,8s8,-3.58 8,-8s-3.58,-8 -8,-8z" />
+                  </g>
                 </svg>
               </button>
               <div class="video__seek-wrapper">
@@ -124,14 +148,33 @@
                   </div>
                 </div>
               </div>
-              <button class="video__btn subtitle-btn">
-                <svg width="30" height="20">
-                  <use xlink:href="#"></use>
+              <button class="video__btn video__btn--subtitle">subtitle
+                <svg width="32" height="20" xmlns="http://www.w3.org/2000/svg">
+                  <g>
+                    <title>background</title>
+                    <rect fill="none" height="402" width="582" y="-1" x="-1" />
+                  </g>
+                  <g>
+                    <title>Layer 1</title>
+                    <path d="m29,0l-26,0c-1.65,0 -3,1.35 -3,3l0,14c0,1.65 1.35,3 3,3l26,0c1.65,0 3,-1.35 3,-3l0,-14c0,-1.65 -1.35,-3 -3,-3zm-14.597,15.854c-0.545,0.108 -1.104,0.164 -1.678,0.164c-0.694,0 -1.354,-0.107 -1.976,-0.323c-0.623,-0.214 -1.172,-0.562 -1.646,-1.041s-0.852,-1.103 -1.133,-1.868c-0.28,-0.766 -0.419,-1.695 -0.419,-2.786c0,-1.134 0.157,-2.085 0.471,-2.851c0.315,-0.768 0.723,-1.384 1.224,-1.854c0.502,-0.468 1.062,-0.804 1.679,-1.008c0.616,-0.204 1.233,-0.307 1.852,-0.307c0.66,0 1.22,0.045 1.678,0.134c0.457,0.087 0.835,0.192 1.133,0.313l-0.448,1.92c-0.254,-0.121 -0.555,-0.209 -0.902,-0.265c-0.347,-0.055 -0.768,-0.082 -1.265,-0.082c-0.915,0 -1.649,0.325 -2.206,0.977c-0.558,0.651 -0.836,1.663 -0.836,3.031c0,0.598 0.067,1.142 0.199,1.632c0.132,0.493 0.334,0.913 0.603,1.26c0.271,0.349 0.607,0.619 1.01,0.812c0.402,0.193 0.867,0.29 1.396,0.29c0.496,0 0.915,-0.049 1.257,-0.148c0.342,-0.099 0.639,-0.227 0.893,-0.38l0.463,1.841c-0.354,0.249 -0.803,0.43 -1.349,0.539zm8.698,0c-0.545,0.108 -1.105,0.164 -1.678,0.164c-0.694,0 -1.354,-0.107 -1.976,-0.323c-0.623,-0.214 -1.172,-0.562 -1.646,-1.041s-0.852,-1.103 -1.133,-1.868c-0.281,-0.767 -0.421,-1.695 -0.421,-2.786c0,-1.134 0.157,-2.085 0.471,-2.851c0.314,-0.768 0.723,-1.384 1.223,-1.854c0.502,-0.468 1.062,-0.804 1.68,-1.008c0.616,-0.204 1.233,-0.307 1.851,-0.307c0.661,0 1.221,0.045 1.678,0.134c0.458,0.087 0.836,0.192 1.133,0.313l-0.446,1.918c-0.253,-0.121 -0.554,-0.209 -0.901,-0.265c-0.348,-0.053 -0.77,-0.08 -1.266,-0.08c-0.915,0 -1.649,0.325 -2.206,0.977c-0.558,0.651 -0.836,1.663 -0.836,3.031c0,0.598 0.067,1.142 0.199,1.632c0.132,0.493 0.334,0.913 0.603,1.26c0.271,0.349 0.606,0.619 1.009,0.812c0.402,0.193 0.868,0.29 1.396,0.29c0.497,0 0.915,-0.049 1.257,-0.148c0.342,-0.099 0.64,-0.227 0.894,-0.38l0.463,1.841c-0.353,0.249 -0.803,0.43 -1.348,0.539z" />
+                  </g>
                 </svg>
               </button>
-              <button class="video__btn fullscreen-btn">
-                <svg width="20" height="20">
-                  <use xlink:href="#"></use>
+              <button class="video__btn video__btn--fullscreen">fullscreen
+                <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+                  <g>
+                    <title>background</title>
+                    <rect fill="none" height="402" width="582" y="-1" x="-1" />
+                  </g>
+                  <g>
+                    <title>Layer 1</title>
+                    <g>
+                      <polygon id="svg_2" points="0,0 0,3 0,6 3,6 3,3 6,3 6,0 3,0" />
+                      <polygon id="svg_3" points="3,14 0,14 0,17 0,20 3,20 6,20 6,17 3,17" />
+                      <polygon id="svg_4" points="17,0 14,0 14,3 17,3 17,6 20,6 20,3 20,0" />
+                      <polygon id="svg_5" points="17,17 14,17 14,20 17,20 20,20 20,17 20,14 17,14" />
+                    </g>
+                  </g>
                 </svg>
               </button>
             </div>
@@ -139,7 +182,7 @@
         </section>
       </section>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer page-footer--photo">
       <div class="page-footer__title">
         <b class="page-footer__contacts">#VISITSEDONA</b>
       </div>
