@@ -151,12 +151,16 @@
     <section class="modal modal--failure">
       <h2 class="modal__message modal__message--error">Что-то пошло не так!</h2>
       <p class="modal__recommendation modal__recommendation--error">Проверьте поля, выделенные красным, скорее всего Вы забыли их заполнить</p>
-      <button class="modal__button-error button" type="button">Закрыть окно</button>
+      <button class="modal__button modal__button--error button" type="button">Ok</button>
     </section>
     <section class="modal modal--success">
-      <h2 class="modal__message modal__message--success">Ваш отзыв отправлен!</h2>
-      <p class="modal__recommendation modal__recommendation--success">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
-      <button class="modal__button-success button" type="button">Закрыть окно</button>
+      <div class="modal__header">
+        <h2 class="modal__message modal__message--success">Ваш отзыв отправлен!</h2>
+        <p class="modal__recommendation modal__recommendation--success">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br>В ближайшее время мы опубликуем его на сайте.</p>
+      </div>
+      <div class="modal__footer">
+        <button class="modal__button modal__button--success button" type="button">Закрыть окно</button>
+      </div>
     </section>
   </div>
 </body>
