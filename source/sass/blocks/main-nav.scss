@@ -1,5 +1,15 @@
 .main-nav {
   position: relative;
+  display: none;
+  &--nojs {
+    display: block;
+  }
+  &--opened {
+    display: block;
+  }
+  &--closed {
+    display: none;
+  }
 }
 .main-nav__toggle {
   background-color: transparent;
