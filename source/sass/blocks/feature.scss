@@ -72,3 +72,51 @@
   line-height: 21px;
   padding-top: 14px;
 }
+
+@media (min-width: $tablet-width) {
+  .feature__item {
+    width: 33.3%;
+    padding: 0;
+    padding-top: 164px;
+    padding-bottom: 66px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    &--hotel {
+      order: 1;
+      padding-left: 55px;
+      padding-right: 45px;
+      &::before {
+        width: 75px;
+        height: 72px;
+        top: 57px;
+        left: 113px;
+      }
+    }
+    &--gift {
+      order: 3;
+      padding-left: 39px;
+      padding-right: 55px;
+      &::before {
+        width: 64px;
+        height: 75px;
+        top: 57px;
+        left: 103px;
+      }
+    }
+    &--food {
+      order: 2;
+      padding-left: 53px;
+      padding-right: 52px;
+      &::before {
+        width: 77px;
+        height: 68px;
+        top: 50px;
+        left: 108px;
+      }
+    }
+  }
+  .feature__title {
+    font-size: 21px;
+  }
+}

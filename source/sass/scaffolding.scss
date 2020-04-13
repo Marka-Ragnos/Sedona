@@ -24,6 +24,7 @@ html {
 }
 
 body {
+  min-width: $mobile-width;
   background-color: #ffffff;
   color: #333333;
   font-family: "PT Sans", "Arial", sans-serif;
@@ -32,6 +33,7 @@ body {
   letter-spacing: normal;
   line-height: 1.5;
   margin: 0;
+  padding: 0;
   overflow-x: hidden;
   text-transform: uppercase;
 }
@@ -43,4 +45,10 @@ img {
 
 a {
   text-decoration: none;
+}
+
+@media (min-width: $tablet-width) {
+  body {
+    min-width: 768px;
+  }
 }

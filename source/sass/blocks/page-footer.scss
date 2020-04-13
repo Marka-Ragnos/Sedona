@@ -25,3 +25,18 @@
   margin: 0 auto;
   margin-top: 40px;
 }
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 36px 60px;
+    align-items: center;
+  }
+  .page-footer__title,
+  .page-footer__social,
+  .page-footer__copyright {
+    margin: 0;
+  }
+}

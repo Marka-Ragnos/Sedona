@@ -12,3 +12,9 @@
   line-height: 26px;
   letter-spacing: normal;
 }
+
+@media (min-width: $tablet-width) {
+	.search__button {
+    width: 458px;
+	}
+}

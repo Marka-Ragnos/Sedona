@@ -19,3 +19,12 @@
   padding-top: 19px;
   line-height: 24px;
 }
+
+@media (min-width: $tablet-width) {
+	.interes {
+    width: 434px;
+  }
+  .interes__title {
+    font-size: 30px;
+  }
+}

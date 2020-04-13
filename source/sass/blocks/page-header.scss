@@ -1,6 +1,7 @@
 .page-header {
   position: relative;
 }
+
 .page-header__logo-image {
   display: block;
   position: absolute;
@@ -10,4 +11,13 @@
   top: 223px;
   left: 50%;
   margin-left: -51px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    min-height: 56px;
+  }
+	.page-header__logo-image {
+    top: 0;
+	}
 }
