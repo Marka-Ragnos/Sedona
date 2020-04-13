@@ -120,3 +120,20 @@
     font-size: 21px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .feature__item {
+    &--hotel::before {
+      top: 63px;
+      left: 185px;
+    }
+    &--gift::before {
+      top: 63px;
+      left: 175px;
+    }
+    &--food::before {
+      top: 63px;
+      left: 180px;
+    }
+  }
+}

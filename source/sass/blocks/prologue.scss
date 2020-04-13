@@ -3,14 +3,14 @@
   width: 270px;
   margin: 0 auto;
   margin-bottom: 28px;
-    &--main {
-      width: 255px;
-      margin-bottom: 0;
-    }
-    &--form {
-      width: 276px;
-      margin-bottom: 17px;
-    }
+  &--main {
+    width: 255px;
+    margin-bottom: 0;
+  }
+  &--form {
+    width: 276px;
+    margin-bottom: 17px;
+  }
 }
 
 .prologue__slogan {
@@ -38,7 +38,17 @@
 }
 
 @media (min-width: $tablet-width) {
-	.prologue {
-    min-width: 490px;
-	}
+  .prologue {
+    &--main {
+      min-width: 490px;
+    }
+    &--photo {
+      min-width: 428px;
+      margin-left: 22%;
+      margin-right: 22%;
+    }
+  }
+  .prologue__slogan--photo {
+    font-size: 30px;
+  }
 }
