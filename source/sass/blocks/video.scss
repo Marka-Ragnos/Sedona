@@ -65,3 +65,9 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+	.video {
+    width: 800px;
+    margin: 0 auto;
+	}
+}

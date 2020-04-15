@@ -1,11 +1,8 @@
 .container {
   max-width: $desktop-width-container;
   margin: 0 auto;
-  box-shadow: 0px 1px 0 0 rgba(1, 1, 1, 0.2);
-  // @media (max-width: $desktop-width) {
-  //   max-width: $tablet-width-container;
-  // }
-  // @media (max-width: $tablet-width) {
-  //   max-width: $mobile-width-container;
-  // }
+  box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
+  @media (min-width: $desktop-width) {
+    background-color: white;
+  }
 }

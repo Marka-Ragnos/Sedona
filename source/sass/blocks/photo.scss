@@ -93,3 +93,25 @@
     width: 100%;
   }
 }
+
+@media (min-width: $desktop-width) {
+	.photo {
+  max-width: $desktop-width;
+  position: relative;
+  }
+  .photo__box {
+    width: 400px;
+    &--top {
+      width: 100%;
+    }
+  }
+  .photo__footer {
+    position: absolute;
+    bottom: 17px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+  }
+}

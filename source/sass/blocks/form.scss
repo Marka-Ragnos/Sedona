@@ -175,3 +175,221 @@
   letter-spacing: normal;
   text-transform: uppercase;
 }
+
+@media (min-width: $tablet-width) {
+  .form {
+    max-width: 648px;
+    margin: 0 auto;
+  }
+  .form__item {
+    &--name {
+      width: 50%;
+      order: 2;
+      border-top: none;
+    }
+    &--contacts {
+      order: 3;
+      padding-bottom: 72px;
+    }
+    &--impression {
+      width: 50%;
+      order: 1;
+      border-top: none;
+      border-right: 1px solid #e5e5e5;
+      padding-bottom: 99px;
+    }
+    &--places {
+      order: 4;
+      padding-bottom: 96px;
+    }
+    &--emotions {
+      order: 5;
+    }
+  }
+  .form__title {
+    &--name {
+      font-size: 21px;
+      line-height: 26px;
+      text-align: left;
+      padding-top: 39px;
+      padding-bottom: 35px;
+    }
+    &--contacts {
+      position: absolute;
+      left: 124px;
+      top: -101px;
+      min-width: 401px;
+      font-size: 21px;
+      line-height: 26px;
+      text-align: left;
+      padding-top: 70px;
+      z-index: 1;
+      background-color: white;
+      text-align: center;
+    }
+    &--impression {
+      font-size: 21px;
+      line-height: 26px;
+      text-align: left;
+      padding-top: 39px;
+    }
+    &--places {
+      position: absolute;
+      left: 125px;
+      top: -44px;
+      width: 400px;
+      font-size: 21px;
+      line-height: 26px;
+      text-align: left;
+      z-index: 1;
+      background-color: white;
+      text-align: center;
+    }
+    &--emotions {
+      position: absolute;
+      left: 125px;
+      top: -31px;
+      width: 400px;
+      font-size: 21px;
+      line-height: 26px;
+      text-align: left;
+      z-index: 1;
+      background-color: white;
+      text-align: center;
+      margin: 0;
+    }
+  }
+  .form__item-wrapper {
+    width: 100%;
+    &--name {
+      padding-left: 57px;
+    }
+    &--contacts {
+      position: relative;
+    }
+    &--places {
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    &--emotions {
+      position: relative;
+      padding-top: 52px;
+    }
+  }
+  .form__wrapper-impression {
+    padding-top: 53px;
+    &--positive {
+      padding-top: 78px;
+    }
+  }
+  .form__wrapper-places {
+    width: 50%;
+    &:nth-child(odd) {
+      padding-top: 63px;
+      padding-left: 30px;
+    }
+    &:nth-child(even) {
+      padding-top: 64px;
+      padding-left: 95px;
+    }
+  }
+  .form__label--contacts {
+    padding-top: 18px;
+  }
+  .form__input {
+    width: 100%;
+  }
+  .form__button {
+    width: 324px;
+    margin-top: 52px;
+    margin-left: 0;
+    justify-content: start;
+    padding-left: 65px;
+  }
+  .form__marker {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 16px;
+  }
+  .form__label-click--radio {
+    padding-left: 76px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form {
+    max-width: 964px;
+  }
+  .form__item-wrapper {
+    &--name {
+      padding-left: 79px;
+    }
+    &--contacts {
+      display: flex;
+      padding-top: 62px;
+    }
+    &--places {
+      justify-content: space-between;
+    }
+  }
+  .form__title {
+    &--name {
+      padding-top: 0;
+    }
+    &--impression {
+      padding-top: 0;
+      padding-left: 80px;
+    }
+    &--contacts {
+      left: 281px;
+    }
+    &--places {
+      left: 283px;
+    }
+    &--emotions {
+      left: 281px;
+    }
+  }
+  .form__wrapper-impression {
+    padding-left: 6px;
+  }
+  .form__item {
+    &--name,
+    &--impression {
+      padding-top: 0;
+      padding-bottom: 79px;
+    }
+  }
+  .form__label-desktop {
+    display: none;
+  }
+  .form__label--contacts {
+    padding: 0;
+  }
+  .form__input-wrapper {
+    padding-left: 18px;
+    &--tel {
+      margin-right: 78px;
+    }
+  }
+  .form__input {
+    padding-left: 17px;
+    padding-right: 92px;
+  }
+  .form__wrapper-places {
+    width: auto;
+    &:nth-child(odd) {
+      padding-left: 0px;
+    }
+    &:nth-child(even) {
+      padding-left: 0px;
+    }
+  }
+  .form__button {
+    width: 480px;
+    justify-content: center;
+    padding: 0;
+  }
+}

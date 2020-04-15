@@ -36,6 +36,9 @@
   .site-list__item {
     min-width: 153px;
     box-shadow: none;
+    font-size: 14px;
+    line-height: 26px;
+    color: black;
   }
   .site-list__item a {
     color: black;
@@ -45,5 +48,5 @@
 @media (min-width: $desktop-width) {
 	.site-list__item {
     min-width: 239px;
-	}
+  }
 }

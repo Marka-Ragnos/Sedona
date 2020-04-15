@@ -43,12 +43,44 @@
       min-width: 490px;
     }
     &--photo {
-      min-width: 428px;
+      width: 100%;
       margin-left: 22%;
       margin-right: 22%;
     }
+    &--form {
+      min-width: 439px;
+    }
   }
-  .prologue__slogan--photo {
-    font-size: 30px;
+  .prologue__slogan {
+    &--main {
+      font-size: 21px;
+      line-height: 26px;
+      padding-top: 50px;
+    }
+    &--photo {
+      font-size: 30px;
+    }
+    &--form {
+      font-size: 30px;
+      padding-top: 66px;
+    }
+  }
+  .prologue__intro--form {
+    padding-top: 22px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .prologue {
+    &--photo {
+      margin-left: 32%;
+      margin-right: 32%;
+    }
+    &--form {
+      width: 36.6%;
+      margin: 0 31.7%;
+      margin-top: 37px;
+      margin-bottom: 59px;
+    }
   }
 }

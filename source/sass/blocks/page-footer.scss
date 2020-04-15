@@ -30,13 +30,34 @@
   .page-footer {
     display: flex;
     flex-wrap: wrap;
+    max-width: 648px;
+    margin: 0 auto;
     justify-content: space-between;
-    padding: 36px 60px;
+
     align-items: center;
+    &--form {
+      padding-top: 74px;
+    }
   }
   .page-footer__title,
   .page-footer__social,
   .page-footer__copyright {
     margin: 0;
+  }
+  .page-footer__title {
+    margin-right: 112px;
+  }
+  .page-footer__social {
+    margin-right: 120px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    max-width: 964px;
+    &--form {
+      padding-top: 78px;
+      max-width: 964px;
+    }
   }
 }
