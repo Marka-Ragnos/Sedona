@@ -17,9 +17,36 @@
   justify-content: center;
   align-content: center;
 }
+
 .site-list__item a {
   color: white;
 }
+
 .site-list__item--active a {
   cursor: default;
+}
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    background-color: white;
+  }
+  .site-list li:nth-child(2) {
+    margin-right: auto;
+  }
+  .site-list__item {
+    min-width: 153px;
+    box-shadow: none;
+    font-size: 14px;
+    line-height: 26px;
+    color: black;
+  }
+  .site-list__item a {
+    color: black;
+  }
+}
+
+@media (min-width: $desktop-width) {
+	.site-list__item {
+    min-width: 239px;
+  }
 }

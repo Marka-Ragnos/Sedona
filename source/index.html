@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="description" content="Sedona" />
   <meta name="keywords" content="Sedona, поиск гостиниц">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Седона</title>
 </head>
@@ -13,10 +14,10 @@
   <div class="container">
     <header class="page-header">
       <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="City of Sedona">
+        <img class="page-header__logo-image page-header__logo-image--opened" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="City of Sedona">
       </a>
-      <nav class="main-nav main-nav--nojs">
-        <button class="main-nav__toggle main-nav__toggle--open" type="button"></button>
+      <button class="page-header__toggle page-header__toggle--opened" type="button"></button>
+      <nav class="main-nav main-nav--opened">
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
@@ -47,11 +48,13 @@
         <p class="prologue__intro prologue__intro--main">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       </section>
       <section class="reasons">
-        <div class="reasons__big-item">
-          <div class="reasons__text-wrapper">
-            <h3 class="reasons__big-title reasons__big-title--main">Настоящий городок</h3>
-            <p class="reasons__big-number">&#8212; №1 &#8212;</p>
-            <p class="reasons__big-text">Седона не аттракцион для туристов, там течет своя жизнь</p>
+        <div class="reasons__big-item reasons__big-item--city">
+          <div class="reasons__container">
+            <div class="reasons__text-wrapper reasons__text-wrapper--main">
+              <h3 class="reasons__big-title reasons__big-title--main">Настоящий городок</h3>
+              <p class="reasons__big-number">&#8212; №1 &#8212;</p>
+              <p class="reasons__big-text">Седона не аттракцион для туристов, там течет своя жизнь</p>
+            </div>
           </div>
           <div class="reasons__image">
             <img class="reasons__image-city" src="img/photo-city-1-x.jpg" width="520" height="260" alt="City">
@@ -64,35 +67,37 @@
           </li>
           <li class="feature__item feature__item--gift">
             <b class="feature__title">Сувениры</b>
-            <p class="feature__text">Не только китайского, но и местного производства!</p>
+            <p class="feature__text">Не только китайского,<br class="feature__hidden-mobile-tablet"> но и местного производства!</p>
           </li>
           <li class="feature__item feature__item--food">
             <b class="feature__title">Еда</b>
-            <p class="feature__text">Всегда заказывайте<br> фирменный бургер, вы не разочаруетесь!</p>
+            <p class="feature__text">Всегда заказывайте<br class="feature__hidden-desktop"> фирменный бургер, вы не разочаруетесь!</p>
           </li>
         </ul>
-        <div class="reasons__big-item">
-          <div class="reasons__text-wrapper">
-            <h3 class="reasons__big-title reasons__big-title--inner">Там есть мост дьявола</h3>
-            <p class="reasons__big-number">&#8212; №2 &#8212;</p>
-            <p class="reasons__big-text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+        <div class="reasons__big-item reasons__big-item--bridge">
+          <div class="reasons__container">
+            <div class="reasons__text-wrapper reasons__text-wrapper--inner">
+              <h3 class="reasons__big-title reasons__big-title--inner">Там есть мост дьявола</h3>
+              <p class="reasons__big-number">&#8212; №2 &#8212;</p>
+              <p class="reasons__big-text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+            </div>
           </div>
           <div class="reasons__image">
             <img class="reasons__image-bridge" src="img/photo-bridge-1-x.jpg" width="520" height="260" alt="Bridge">
           </div>
         </div>
         <div class="reasons__grey-wrapper">
-          <div class="reasons__item">
+          <div class="reasons__item reasons__item-№3 reasons__item--grey">
             <h3 class="reasons__title">Небольшая площадь</h3>
             <p class="reasons__number">&#8212; №3 &#8212;</p>
             <p class="reasons__text">Все интересные места находятся очень близко</p>
           </div>
-          <div class="reasons__item">
+          <div class="reasons__item reasons__item--grey">
             <h3 class="reasons__title">Красивая дорога</h3>
             <p class="reasons__number">&#8212; №4 &#8212;</p>
-            <p class="reasons__text">Ехать в седону из Лас-Вегаса совсем не скучно!</p>
+            <p class="reasons__text reasons__text--center">Ехать в седону из Лас-Вегаса совсем не скучно!</p>
           </div>
-          <div class="reasons__item">
+          <div class="reasons__item reasons__item--grey">
             <h3 class="reasons__title">Мало туристов</h3>
             <p class="reasons__number">&#8212; №5 &#8212;</p>
             <p class="reasons__text">Большинство едет в гранд каньон и толпится там</p>
@@ -102,7 +107,7 @@
       <section class="search">
         <div class="interes">
           <h3 class="interes__title">Заинтересовались?</h3>
-          <p class="interes__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+          <p class="interes__text">Укажите предполагаемые даты поездки,<br class="interes__hidden"> и мы покажем вам лучшие предложения гостиниц в седоне</p>
         </div>
         <a class="search__button button" href="search.html">Найти гостиницу</a>
         <div class="map">
@@ -136,6 +141,7 @@
       </div>
     </footer>
   </div>
+  <script src="../source/js/menu.js"></script>
 </body>
 
 </html>

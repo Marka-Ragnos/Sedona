@@ -19,3 +19,32 @@
   padding-top: 19px;
   line-height: 24px;
 }
+.interes__hidden {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+	.interes {
+    width: 435px;
+  }
+  .interes__title {
+    font-size: 30px;
+    padding-top: 55px;
+  }
+  .interes__text {
+    padding-top: 30px;
+  }
+  .interes__hidden {
+    display: inline;
+  }
+}
+@media (min-width: $desktop-width) {
+  .interes__title {
+    padding-top: 56px;
+  }
+  .search__button {
+    margin-top: 47px;
+  }
+}
+
+

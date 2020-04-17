@@ -24,6 +24,7 @@ html {
 }
 
 body {
+  min-width: $mobile-width;
   background-color: #ffffff;
   color: #333333;
   font-family: "PT Sans", "Arial", sans-serif;
@@ -32,8 +33,12 @@ body {
   letter-spacing: normal;
   line-height: 1.5;
   margin: 0;
+  padding: 0;
   overflow-x: hidden;
   text-transform: uppercase;
+  @media (min-width: $desktop-width) {
+    background-color: #f2f2f2;
+  }
 }
 
 img {

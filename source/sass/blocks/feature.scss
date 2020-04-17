@@ -72,3 +72,84 @@
   line-height: 21px;
   padding-top: 14px;
 }
+.feature__hidden-mobile-tablet {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .feature {
+    margin: 0;
+  }
+  .feature__item {
+    width: 33.3%;
+    padding: 0;
+    padding-top: 159px;
+    padding-bottom: 61px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    &--hotel {
+      order: 1;
+      padding-left: 45px;
+      padding-right: 45px;
+      &::before {
+        width: 75px;
+        height: 72px;
+        top: 57px;
+        left: 113px;
+      }
+    }
+    &--gift {
+      order: 3;
+      padding-left: 39px;
+      padding-right: 40px;
+      &::before {
+        width: 64px;
+        height: 75px;
+        top: 57px;
+        left: 103px;
+      }
+    }
+    &--food {
+      order: 2;
+      padding-left: 53px;
+      padding-right: 52px;
+      &::before {
+        width: 77px;
+        height: 68px;
+        top: 50px;
+        left: 108px;
+      }
+    }
+  }
+  .feature__title {
+    font-size: 21px;
+  }
+  .feature__text {
+    padding-top: 21px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feature__item {
+    padding-bottom: 82px;
+    &--hotel::before {
+      top: 63px;
+      left: 185px;
+    }
+    &--gift::before {
+      top: 63px;
+      left: 175px;
+    }
+    &--food::before {
+      top: 63px;
+      left: 180px;
+    }
+  }
+  .feature__hidden-desktop {
+    display: none;
+  }
+  .feature__hidden-mobile-tablet {
+    display: inline;
+  }
+}
