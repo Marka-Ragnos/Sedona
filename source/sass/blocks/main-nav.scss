@@ -1,9 +1,41 @@
+// .main-nav {
+//   position: relative;
+//   display: none;
+//   &--nojs {
+//     display: block;
+//   }
+//   &--opened {
+//     display: block;
+//   }
+//   &--closed {
+//     display: none;
+//   }
+// }
+
+// .main-nav__toggle {
+//   background-color: transparent;
+//   background-repeat: no-repeat;
+//   position: absolute;
+//   border: 0;
+//   &--open {
+//     background-image: url(../img/icon-menu.svg);
+//     width: 23px;
+//     height: 21px;
+//     left: 87%;
+//     top: 107%;
+//   }
+//   &--close {
+//     background-image: url(../img/icon-cross.svg);
+//     width: 23px;
+//     height: 22px;
+//     left: 87%;
+//     top: 7%;
+//   }
+// }
 .main-nav {
-  position: relative;
-  display: none;
-  &--nojs {
-    display: block;
-  }
+  // &--nojs {
+  //   display: block;
+  // }
   &--opened {
     display: block;
   }
@@ -12,34 +44,6 @@
   }
 }
 
-.main-nav__toggle {
-  background-color: transparent;
-  background-repeat: no-repeat;
-  position: absolute;
-  border: 0;
-  &--open {
-    background-image: url(../img/icon-menu.svg);
-    width: 23px;
-    height: 21px;
-    left: 87%;
-    top: 107%;
-  }
-  &--close {
-    background-image: url(../img/icon-cross.svg);
-    width: 23px;
-    height: 22px;
-    left: 87%;
-    top: 7%;
-  }
-}
-
-@media (min-width: $tablet-width) {
-	.main-nav__toggle {
-    display: none;
-	}
-}
-
-
 .main-nav__list {
   list-style: none;
   margin: 0;
@@ -47,6 +51,9 @@
 }
 
 @media (min-width: $tablet-width) {
+  .main-nav {
+    display: block;
+  }
   .main-nav__list {
     display: flex;
     flex-wrap: wrap;
