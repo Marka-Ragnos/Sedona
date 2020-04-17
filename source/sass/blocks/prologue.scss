@@ -41,6 +41,7 @@
   .prologue {
     &--main {
       min-width: 490px;
+      padding-bottom: 49px;
     }
     &--photo {
       width: 100%;
@@ -57,16 +58,17 @@
       line-height: 26px;
       padding-top: 50px;
     }
-    &--photo {
-      font-size: 30px;
-    }
+    &--photo,
     &--form {
       font-size: 30px;
       padding-top: 66px;
     }
   }
-  .prologue__intro--form {
-    padding-top: 22px;
+  .prologue__intro {
+    &--photo,
+    &--form {
+      padding-top: 22px;
+    }
   }
 }
 
@@ -75,6 +77,8 @@
     &--photo {
       margin-left: 32%;
       margin-right: 32%;
+      margin-top: 37px;
+      margin-bottom: 30px;
     }
     &--form {
       width: 36.6%;

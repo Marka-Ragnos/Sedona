@@ -72,19 +72,25 @@
   line-height: 21px;
   padding-top: 14px;
 }
+.feature__hidden-mobile-tablet {
+  display: none;
+}
 
 @media (min-width: $tablet-width) {
+  .feature {
+    margin: 0;
+  }
   .feature__item {
     width: 33.3%;
     padding: 0;
-    padding-top: 164px;
-    padding-bottom: 66px;
+    padding-top: 159px;
+    padding-bottom: 61px;
     text-align: center;
     display: flex;
     flex-direction: column;
     &--hotel {
       order: 1;
-      padding-left: 55px;
+      padding-left: 45px;
       padding-right: 45px;
       &::before {
         width: 75px;
@@ -96,7 +102,7 @@
     &--gift {
       order: 3;
       padding-left: 39px;
-      padding-right: 55px;
+      padding-right: 40px;
       &::before {
         width: 64px;
         height: 75px;
@@ -119,10 +125,14 @@
   .feature__title {
     font-size: 21px;
   }
+  .feature__text {
+    padding-top: 21px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .feature__item {
+    padding-bottom: 82px;
     &--hotel::before {
       top: 63px;
       left: 185px;
@@ -135,5 +145,11 @@
       top: 63px;
       left: 180px;
     }
+  }
+  .feature__hidden-desktop {
+    display: none;
+  }
+  .feature__hidden-mobile-tablet {
+    display: inline;
   }
 }

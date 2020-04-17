@@ -45,7 +45,6 @@
     margin: 0;
   }
   .intro__header {
-    width: 100%;
     min-height: 290px;
     background-size: cover;
     &--main {
@@ -69,7 +68,10 @@
   }
   .intro__picture {
     min-width: 460px;
-    padding-bottom: 14px;
+    padding-bottom: 23px;
+    &--main {
+      padding-bottom: 15px;
+    }
   }
 }
 
@@ -78,6 +80,15 @@
     min-height: 301px;
     &::before {
       background-image: url(../../img/bg-intro-triangle-desktop.svg);
+    }
+    &--main {
+      min-height: 518px;
+    }
+  }
+  .intro__picture {
+    padding-bottom: 19px;
+    &--main {
+      padding-bottom: 14px;
     }
   }
 }

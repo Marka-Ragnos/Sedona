@@ -16,5 +16,12 @@
 @media (min-width: $tablet-width) {
   .search__button {
     width: 458px;
+    margin-top: 42px;
   }
 }
+@media (min-width: $desktop-width) {
+  .search__button {
+    margin-top: 47px;
+  }
+}
+

@@ -1,6 +1,6 @@
 .page-footer {
   text-align: center;
-  padding-top: 30px;
+  margin-top: 30px;
 }
 .page-footer__title {
   width: 136px;
@@ -33,10 +33,15 @@
     max-width: 648px;
     margin: 0 auto;
     justify-content: space-between;
-
     align-items: center;
+    &--index {
+      margin-top: 30px;
+    }
+    &--photo {
+      margin-top: 76px;
+    }
     &--form {
-      padding-top: 74px;
+      margin-top: 74px;
     }
   }
   .page-footer__title,
@@ -56,8 +61,11 @@
   .page-footer {
     max-width: 964px;
     &--form {
-      padding-top: 78px;
       max-width: 964px;
+      margin-top: 78px;
+    }
+    &--photo {
+      margin-top: 121px;
     }
   }
 }
