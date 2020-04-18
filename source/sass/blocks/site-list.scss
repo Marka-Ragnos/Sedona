@@ -6,7 +6,6 @@
   line-height: 40px;
   letter-spacing: normal;
 }
-
 .site-list__item a {
   color: white;
   min-height: 56px;
@@ -17,12 +16,14 @@
   border-bottom: 1px solid #678fa8;
   box-shadow: 0px 1px 0 0 rgba(1, 1, 1, 0.2),
     inset 0px 1px 0 0 rgba(255, 255, 255, 0.2);
-  &:hover {
-    background-color: #669ec0;
-  }
-  &:active {
-    background-color: #5496bd;
-  }
+}
+.site-list__item a[href]:hover {
+  background-color: #669ec0;
+  border-bottom-color: #669ec0;
+}
+.site-list__item a[href]:active {
+  background-color: #5496bd;
+  border-bottom-color: #5496bd;
 }
 .site-list__item--active a {
   cursor: default;
