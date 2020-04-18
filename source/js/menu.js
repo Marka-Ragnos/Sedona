@@ -2,7 +2,7 @@ var mainNav = document.querySelector(".main-nav");
 var toggle = document.querySelector(".page-header__toggle");
 var logo = document.querySelector(".page-header__logo-image");
 
-// mainNav.classList.remove("main-nav--nojs");
+mainNav.classList.remove("main-nav--nojs");
 
 toggle.addEventListener("click", function () {
   if (mainNav.classList.contains("main-nav--closed")) {

@@ -22,16 +22,17 @@
   background-repeat: no-repeat;
   outline: none;
   border: none;
+  cursor: pointer;
+  z-index: 2;
+  position: absolute;
   &--closed {
-    position: absolute;
     background-image: url(../img/icon-menu.svg);
     width: 23px;
     height: 21px;
-    left: 277px;
+    left: 87%;
     top: 17px;
   }
   &--opened {
-    position: absolute;
     background-image: url(../img/icon-cross.svg);
     width: 23px;
     height: 22px;

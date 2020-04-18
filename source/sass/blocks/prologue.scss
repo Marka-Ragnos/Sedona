@@ -36,6 +36,9 @@
     padding-top: 29px;
   }
 }
+.prologue__intro-hidden-tablet {
+  display: none;
+}
 
 @media (min-width: $tablet-width) {
   .prologue {
@@ -49,7 +52,7 @@
       margin-right: 22%;
     }
     &--form {
-      min-width: 439px;
+      width: 100%;
     }
   }
   .prologue__slogan {
@@ -69,6 +72,9 @@
     &--form {
       padding-top: 22px;
     }
+  }
+  .prologue__intro-hidden-tablet {
+    display: inline;
   }
 }
 
