@@ -61,6 +61,13 @@
   vertical-align: top;
   font-size: 0;
   fill: #5c6870;
+  outline: none;
+  &:hover {
+    fill: #333333;
+  }
+  &:active {
+    fill: rgba(51, 51, 51, 0.3);
+  }
   &--replay {
     margin-left: 3px;
     margin-right: 130px;
@@ -105,6 +112,13 @@
     padding: 15px;
     width: auto;
     height: auto;
+    &:hover {
+      fill: white;
+      animation: svg 1.3s infinite;
+    }
+    &:active {
+      fill: rgba(255, 255, 255, 0.3);
+    }
   }
   .video__bar {
     width: 117px;

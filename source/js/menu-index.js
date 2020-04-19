@@ -2,7 +2,9 @@ var mainNav = document.querySelector(".main-nav");
 var toggle = document.querySelector(".page-header__toggle");
 var logo = document.querySelector(".page-header__logo-image");
 
-toggle.classList.add("page-header__toggle--opened");
+mainNav.classList.add("main-nav--closed");
+logo.classList.add("page-header__logo-image--closed");
+toggle.classList.add("page-header__toggle--closed");
 
 toggle.addEventListener("click", function () {
   if (mainNav.classList.contains("main-nav--closed")) {

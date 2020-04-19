@@ -15,6 +15,12 @@
   width: 27px;
   height: 34px;
   margin-left: auto;
-  background-image: url(../img/logo-htmlacademy.svg);
-  background-repeat: no-repeat;
+}
+.copyright__link-icon {
+  &:hover {
+    fill: $blue;
+  }
+  &:active {
+    opacity: 0.3;
+  }
 }
