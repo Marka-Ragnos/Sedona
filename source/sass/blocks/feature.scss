@@ -95,8 +95,9 @@
       &::before {
         width: 75px;
         height: 72px;
-        top: 57px;
-        left: 113px;
+        background-size: 75px 72px;
+        top: 60px;
+        left: 90px;
       }
     }
     &--gift {
@@ -106,8 +107,9 @@
       &::before {
         width: 64px;
         height: 75px;
+        background-size: 64px 75px;
         top: 57px;
-        left: 103px;
+        left: 96px;
       }
     }
     &--food {
@@ -117,8 +119,9 @@
       &::before {
         width: 77px;
         height: 68px;
-        top: 50px;
-        left: 108px;
+        background-size: 77px 68px;
+        top: 63px;
+        left: 89px;
       }
     }
   }
@@ -134,16 +137,16 @@
   .feature__item {
     padding-bottom: 82px;
     &--hotel::before {
-      top: 63px;
-      left: 185px;
+      top: 60px;
+      left: 161px;
     }
     &--gift::before {
-      top: 63px;
-      left: 175px;
+      top: 57px;
+      left: 168px;
     }
     &--food::before {
       top: 63px;
-      left: 180px;
+      left: 161px;
     }
   }
   .feature__hidden-desktop {

@@ -73,6 +73,12 @@
     left: 0;
     top: -14px;
   }
+  &:hover::before {
+    background-color: #e5e5e5;
+  }
+  &:active::before {
+    background-color: #d5d5d5;
+  }
   &::after {
     content: "";
     display: none;
@@ -82,6 +88,9 @@
     background-color: #333;
     left: 17px;
     top: 3px;
+  }
+  &:active::after {
+    opacity: 0.3;
   }
   &--radio::before {
     border-radius: 50%;
@@ -105,11 +114,32 @@
   font-size: 18px;
   font-weight: bold;
   text-transform: none;
+  outline: none;
   &::placeholder {
     color: black;
   }
   &--name {
     width: 100%;
+    &:hover {
+      background-color: #e5e5e5;
+      border-color: #e5e5e5;
+    }
+    &:active,
+    &:focus {
+      background-color: white;
+      border-color: #e5e5e5;
+    }
+  }
+  &--contacts {
+    &:hover {
+      background-color: #e5e5e5;
+      border-color: #e5e5e5;
+    }
+    &:active,
+    &:focus {
+      background-color: white;
+      border-color: #e5e5e5;
+    }
   }
   &--emotions {
     width: 100%;
@@ -117,6 +147,15 @@
     padding: 12px 17px;
     line-height: 26px;
     resize: none;
+    &:hover {
+      background-color: #e5e5e5;
+      border-color: #e5e5e5;
+    }
+    &:active,
+    &:focus {
+      background-color: white;
+      border-color: #e5e5e5;
+    }
   }
 }
 .form__input-hidden {
@@ -344,6 +383,8 @@
     }
     &--contacts {
       left: 281px;
+      top: -98px;
+      padding-top: 67px;
     }
     &--places {
       left: 283px;
