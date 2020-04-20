@@ -20,20 +20,20 @@
   }
   &:active {
     background-color: #5496bd;
+    svg {
+      opacity: 0.3;
+    }
   }
 }
-.social__link--twitter {
-  background-image: url(../img/icon-twitter.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+.social__link-twitter {
+  height: 100%;
+  padding-top: 17px;
 }
-.social__link--facebook {
-  background-image: url(../img/icon-facebook.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+.social__link-facebook {
+  height: 100%;
+  padding-top: 13px;
 }
-.social__link--youtube {
-  background-image: url(../img/icon-youtube.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+.social__link-youtube {
+  height: 100%;
+  padding-top: 17px;
 }
