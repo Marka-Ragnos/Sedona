@@ -2,9 +2,11 @@
   margin-top: 49px;
   position: relative;
 }
+
 .map__interactive {
   width: 100%;
 }
+
 .map__static {
   position: absolute;
   width: 320px;
@@ -17,10 +19,12 @@
   .map {
     margin-top: 58px;
   }
+
   .map__static {
     width: 100%;
   }
 }
+
 @media (min-width: $desktop-width) {
   .map {
     margin-top: 66px;

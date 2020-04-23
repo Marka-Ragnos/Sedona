@@ -12,14 +12,17 @@
   transform: translate(-50%, -50%);
   display: none;
 }
+
 .modal--error {
-  background-color: #fff;
+  background-color: #ffffff;
   padding: 45px 55px 35px;
   z-index: 200;
 }
+
 .modal--success {
   z-index: 100;
 }
+
 .modal__message {
   font-size: 18px;
   font-weight: bold;
@@ -31,19 +34,24 @@
   margin: 0;
   text-align: center;
 }
+
 .modal__recommendation {
   margin: 0;
+
   &--error {
     padding-top: 26px;
   }
+
   &--success {
     padding-top: 27px;
   }
 }
+
 .modal__header {
-  background-color: #fff;
+  background-color: #ffffff;
   padding: 49px 52px 38px;
 }
+
 .modal__footer {
   background-color: #f2f2f2;
   height: 98px;
@@ -51,6 +59,7 @@
   align-items: center;
   margin-top: -5px;
 }
+
 .modal__button {
   font-weight: bold;
   font-stretch: normal;
@@ -61,10 +70,12 @@
   font-size: 18px;
   line-height: 26px;
   height: 58px;
+
   &--error {
     width: 180px;
     margin-top: 25px;
   }
+
   &--success {
     width: 280px;
     align-items: center;

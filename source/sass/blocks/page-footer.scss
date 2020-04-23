@@ -2,6 +2,7 @@
   text-align: center;
   margin-top: 30px;
 }
+
 .page-footer__title {
   width: 136px;
   margin: 0 auto;
@@ -13,11 +14,13 @@
   letter-spacing: normal;
   color: black;
 }
+
 .page-footer__social {
   width: 151px;
   margin: 0 auto;
   margin-top: 36px;
 }
+
 .page-footer__copyright {
   display: flex;
   flex-wrap: wrap;
@@ -34,24 +37,30 @@
     margin: 0 auto;
     justify-content: space-between;
     align-items: center;
+
     &--index {
       margin-top: 30px;
     }
+
     &--photo {
       margin-top: 76px;
     }
+
     &--form {
       margin-top: 74px;
     }
   }
+
   .page-footer__title,
   .page-footer__social,
   .page-footer__copyright {
     margin: 0;
   }
+
   .page-footer__title {
     margin-right: 112px;
   }
+
   .page-footer__social {
     margin-right: 120px;
   }
@@ -60,10 +69,12 @@
 @media (min-width: $desktop-width) {
   .page-footer {
     max-width: 964px;
+
     &--form {
       max-width: 964px;
       margin-top: 78px;
     }
+
     &--photo {
       margin-top: 121px;
     }
