@@ -38,6 +38,7 @@
   margin-top: 16px;
   font-size: 14px;
   line-height: 24px;
+  color: black;
 }
 
 .photo__author {
@@ -70,6 +71,7 @@
   line-height: 1.71;
   margin-top: 3px;
   margin-left: 14px;
+  color: black;
 }
 
 @media (min-width: $tablet-width) {
@@ -120,7 +122,6 @@
     min-height: 80px;
     width: 100%;
     background-color: #f2f2f2;
-    color: white;
     display: flex;
   }
 
@@ -150,16 +151,7 @@
     }
   }
 
-  .photo__text {
-    color: black;
-  }
-
-  .photo__author {
-    color: #333333;
-  }
-
   .photo__counter {
-    color: black;
     margin-left: 9px;
 
     &--top {
@@ -190,8 +182,12 @@
     min-height: 80px;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.3);
-    color: white;
     display: flex;
+  }
+
+  .photo__text,
+  .photo__author {
+    color: white;
   }
 
   .photo__footer-wrapper {
@@ -213,6 +209,8 @@
   }
 
   .photo__counter {
+    color: white;
+
     &--top {
       margin-left: 8px;
     }
