@@ -12,7 +12,7 @@
     // Picture element HTML5 shiv
     document.createElement("picture");
   </script>
-  <script src="picturefill.js" async></script>
+  <script src="js/picturefill.js" async></script>
 </head>
 
 <body>
@@ -21,6 +21,7 @@
       <a class="page-header__logo" href="index.html">
         <picture>
           <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
           <img class="page-header__logo-image page-header__logo-image--opened" src="img/logotype-mobile.svg" width="102" height="83" alt="City of Sedona">
         </picture>
       </a>
