@@ -1,6 +1,7 @@
 .search {
   width: 100%;
 }
+
 .search__button {
   width: 280px;
   height: 58px;
@@ -19,9 +20,9 @@
     margin-top: 42px;
   }
 }
+
 @media (min-width: $desktop-width) {
   .search__button {
     margin-top: 47px;
   }
 }
-

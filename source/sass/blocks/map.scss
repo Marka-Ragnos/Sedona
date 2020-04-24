@@ -2,25 +2,40 @@
   margin-top: 49px;
   position: relative;
 }
+
 .map__interactive {
   width: 100%;
 }
+
 .map__static {
+  width: 100%;
   position: absolute;
-  width: 320px;
-  height: 350px;
   left: 0;
   z-index: -1;
+
+  &::before {
+    content: "";
+    width: 27px;
+    height: 27px;
+    position: absolute;
+    background-image: url("../img/icon-map-marker.svg");
+    left: 50%;
+    top: 50%;
+    margin-left: -13px;
+    margin-top: -13px;
+  }
+}
+
+.map__static-img {
+  max-height: 350px;
 }
 
 @media (min-width: $tablet-width) {
   .map {
     margin-top: 58px;
   }
-	.map__static {
-    width: 100%;
-	}
 }
+
 @media (min-width: $desktop-width) {
   .map {
     margin-top: 66px;

@@ -3,10 +3,12 @@
   width: 270px;
   margin: 0 auto;
   margin-bottom: 28px;
+
   &--main {
     width: 255px;
     margin-bottom: 0;
   }
+
   &--form {
     width: 276px;
     margin-bottom: 17px;
@@ -23,19 +25,23 @@
   line-height: 1.44;
   letter-spacing: normal;
   color: black;
+
   &--main {
     padding-top: 40px;
   }
 }
+
 .prologue__intro {
   margin: 0;
   padding-top: 27px;
   line-height: 24px;
+
   &--main {
     line-height: 26px;
     padding-top: 29px;
   }
 }
+
 .prologue__intro-hidden-tablet {
   display: none;
 }
@@ -46,33 +52,39 @@
       min-width: 490px;
       padding-bottom: 49px;
     }
+
     &--photo {
       width: 100%;
       margin-left: 22%;
       margin-right: 22%;
     }
+
     &--form {
       width: 100%;
     }
   }
+
   .prologue__slogan {
     &--main {
       font-size: 21px;
       line-height: 26px;
       padding-top: 50px;
     }
+
     &--photo,
     &--form {
       font-size: 30px;
       padding-top: 66px;
     }
   }
+
   .prologue__intro {
     &--photo,
     &--form {
       padding-top: 22px;
     }
   }
+
   .prologue__intro-hidden-tablet {
     display: inline;
   }
@@ -86,6 +98,7 @@
       margin-top: 37px;
       margin-bottom: 30px;
     }
+
     &--form {
       width: 36.6%;
       margin: 0 31.7%;

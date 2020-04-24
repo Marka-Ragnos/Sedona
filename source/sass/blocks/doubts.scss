@@ -2,11 +2,13 @@
   width: 100%;
   margin-top: 31px;
 }
+
 .doubts__header {
   text-align: center;
   width: 236px;
   margin: 0 auto;
 }
+
 .doubts__slogan {
   margin: 0;
   font-size: 18px;
@@ -17,6 +19,7 @@
   letter-spacing: normal;
   color: black;
 }
+
 .doubts__intro {
   margin: 0;
   margin-top: 26px;
@@ -28,13 +31,16 @@
     width: 100%;
     margin-top: 67px;
   }
+
   .doubts__header {
     width: 415px;
   }
+
   .doubts__slogan {
     font-size: 30px;
   }
 }
+
 @media (min-width: $desktop-width) {
   .doubts {
     margin-top: 71px;

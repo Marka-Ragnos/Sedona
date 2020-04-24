@@ -7,32 +7,40 @@
   padding: 0;
   margin-right: -6px;
 }
+
 .social__item {
   margin-right: 6px;
 }
+
 .social__link {
   background-color: $blue;
   display: block;
   width: 46px;
   height: 48px;
+
   &:hover {
     background-color: rgb(102, 158, 192);
   }
+
   &:active {
     background-color: #5496bd;
+
     svg {
       opacity: 0.3;
     }
   }
 }
+
 .social__link-twitter {
   height: 100%;
   padding-top: 17px;
 }
+
 .social__link-facebook {
   height: 100%;
   padding-top: 13px;
 }
+
 .social__link-youtube {
   height: 100%;
   padding-top: 17px;

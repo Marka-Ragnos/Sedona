@@ -10,16 +10,19 @@
   color: black;
   padding-top: 3px;
 }
+
 .copyright__link {
   font-size: 0;
   width: 27px;
   height: 34px;
   margin-left: auto;
 }
+
 .copyright__link-icon {
   &:hover {
     fill: $blue;
   }
+
   &:active {
     opacity: 0.3;
   }
