@@ -1,10 +1,19 @@
 .map {
-  margin-top: 49px;
+  // margin-top: 49px;
+  // position: relative;
+  overflow: hidden;
+  padding-bottom: 56.25%;
   position: relative;
+  height: 0;
 }
 
 .map__interactive {
+  // width: 100%;
+  left: 0;
+  top: 0;
+  height: 100%;
   width: 100%;
+  position: absolute;
 }
 
 .map__static {
