@@ -9,6 +9,7 @@ var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
 var csso = require("gulp-csso");
+var imagemin = require("gulp-imagemin");
 
 gulp.task("css", function () {
   return gulp
@@ -32,9 +33,22 @@ gulp.task("server", function () {
     cors: true,
     ui: false,
   });
-
   gulp.watch("source/sass/**/*.scss", gulp.series("css"));
   gulp.watch("source/*.html").on("change", server.reload);
 });
 
 gulp.task("start", gulp.series("css", "server"));
+
+gulp.task("images", function () {
+  return gulp
+    .src("source/img/**/*.{gif,jpg,png,svg}")
+    .pipe(
+      imagemin([
+        imagemin.gifsicle({ interlaced: true }),
+        imagemin.mozjpeg({ quality: 75, progressive: true }),
+        imagemin.optipng({ optimizationLevel: 3 }),
+        imagemin.svgo(),
+      ])
+    )
+    .pipe(gulp.dest("source/img"));
+});
