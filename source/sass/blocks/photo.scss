@@ -61,7 +61,7 @@
   height: 21px;
   background-repeat: no-repeat;
   font-size: 0;
-  background-color: white;
+  background-color: transparent;
   opacity: 0.3;
 }
 
@@ -188,6 +188,11 @@
   .photo__text,
   .photo__author {
     color: white;
+  }
+
+  .photo__like {
+    background-image: url("../img/icon-likew.svg");
+    opacity: 1;
   }
 
   .photo__footer-wrapper {

@@ -10,6 +10,8 @@ var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
 var csso = require("gulp-csso");
 var imagemin = require("gulp-imagemin");
+var webp = require("gulp-webp");
+var svgstore = require("gulp-svgstore");
 
 gulp.task("css", function () {
   return gulp
@@ -41,14 +43,34 @@ gulp.task("start", gulp.series("css", "server"));
 
 gulp.task("images", function () {
   return gulp
-    .src("source/img/**/*.{gif,jpg,png,svg}")
+    .src("source/img/**/*.{jpg,png,svg}")
     .pipe(
       imagemin([
-        imagemin.gifsicle({ interlaced: true }),
         imagemin.mozjpeg({ quality: 75, progressive: true }),
         imagemin.optipng({ optimizationLevel: 3 }),
-        imagemin.svgo(),
+        imagemin.svgo({
+          plugins: [{ removeViewBox: false }, { cleanupIDs: false }],
+        }),
       ])
     )
+    .pipe(gulp.dest("source/img"));
+});
+
+gulp.task("webp", function () {
+  return gulp
+    .src("source/img/**/*.{png,jpg}")
+    .pipe(webp({ quality: 90 }))
+    .pipe(gulp.dest("source/img"));
+});
+
+gulp.task("sprite", function () {
+  return gulp
+    .src("source/img/sprite/*.svg")
+    .pipe(
+      svgstore({
+        inlineSvg: true,
+      })
+    )
+    .pipe(rename("sprite.svg"))
     .pipe(gulp.dest("source/img"));
 });
