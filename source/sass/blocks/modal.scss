@@ -10,17 +10,19 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  display: none;
+  display: block;
 }
 
 .modal--error {
   background-color: #ffffff;
   padding: 45px 55px 35px;
-  z-index: 200;
+  z-index: 100;
+  display: none;
 }
 
 .modal--success {
-  z-index: 100;
+  display: none;
+  z-index: 200;
 }
 
 .modal__message {
@@ -79,5 +81,57 @@
   &--success {
     width: 280px;
     align-items: center;
+  }
+}
+
+.modal-hidden-mobile {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .modal--success {
+    width: 640px;
+    height: 347px;
+  }
+
+  .modal--error {
+    width: 400px;
+    height: 347px;
+    padding-top: 54px;
+  }
+
+  .modal__footer {
+    height: 146px;
+  }
+
+  .modal__header {
+    padding-top: 64px;
+    padding-bottom: 41px;
+  }
+
+  .modal__button {
+    font-size: 21px;
+    height: 58px;
+
+    &--success {
+      width: 458px;
+    }
+
+    &--error {
+      width: 272px;
+      margin-top: 32px;
+    }
+  }
+
+  .modal__message {
+    font-size: 30px;
+
+    &--error {
+      line-height: 40px;
+    }
+  }
+
+  .modal-hidden-mobile {
+    display: inline;
   }
 }
