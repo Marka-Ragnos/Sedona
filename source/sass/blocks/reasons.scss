@@ -1,5 +1,7 @@
 .reasons {
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .reasons::before {
@@ -24,6 +26,10 @@
   width: 265px;
   color: white;
   text-align: center;
+}
+
+.reasons__big-item {
+  width: 100%;
 }
 
 .reasons__big-title {
@@ -76,6 +82,7 @@
 .reasons__grey-wrapper {
   background-color: #eeeeee;
   text-align: center;
+  width: 100%;
 }
 
 .reasons__item {
@@ -160,6 +167,7 @@
 
   .reasons__text-wrapper {
     width: 162px;
+    min-height: 256px;
   }
 
   .reasons__container {
@@ -168,6 +176,7 @@
 
   .reasons__big-item {
     display: flex;
+    height: 256px;
 
     &--bridge {
       flex-direction: row-reverse;
@@ -238,7 +247,7 @@
     }
 
     &--inner {
-      padding-left: 33px;
+      padding-left: 32px;
       padding-right: 32px;
     }
   }
