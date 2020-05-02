@@ -19,6 +19,8 @@
 }
 
 .video__controls {
+  display: flex;
+  flex-wrap: wrap;
   position: relative;
   width: 280px;
   height: 66px;
@@ -85,11 +87,11 @@
 
   &--replay {
     margin-left: 3px;
-    margin-right: 130px;
+    margin-right: 133px;
   }
 
   &--subtitle {
-    margin-right: 27px;
+    margin-right: 31px;
   }
 }
 
@@ -123,7 +125,7 @@
     position: static;
     top: auto;
     padding: 0;
-    margin: 2px 23px;
+    margin: 2px 27px;
     width: 389px;
     display: inline-block;
     vertical-align: middle;
