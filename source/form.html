@@ -12,8 +12,10 @@
   <script>
     // Picture element HTML5 shiv
     document.createElement("picture");
-    </script>
+  </script>
   <script src="js/picturefill.js" async=""></script>
+  <script src="js/svg4everybody.js"></script>
+  <script>svg4everybody(); // run it now or whenever you are ready</script>
   <title>HTML Academy: Седона</title>
 </head>
 
@@ -59,8 +61,7 @@
       </section>
       <section class="prologue prologue--form">
         <h2 class="prologue__slogan prologue__slogan--form">Оставьте свой отзыв</h2>
-        <p class="prologue__intro prologue__intro--form">Помогите нашим отелям стать лучше! оставьте отзыв о них,<br class="prologue__intro-hidden-tablet"> а также о посещенных вами
-          достопримечательностях</p>
+        <p class="prologue__intro prologue__intro--form">Помогите нашим отелям стать лучше! оставьте отзыв о них,&#160;<br class="prologue__intro-hidden-tablet">а также о посещенных вами достопримечательностях</p>
       </section>
       <form class="form" id="form" action="https://echo.htmlacademy.ru" method="post">
         <div class="form__item form__item--name">
@@ -180,7 +181,7 @@
       </div>
     </footer>
     <section class="modal modal--error">
-      <h2 class="modal__message modal__message--error">Что-то пошло не так!</h2>
+      <h2 class="modal__message modal__message--error">Что-то пошло<br class="modal-hidden-mobile">&#160;не так!</h2>
       <p class="modal__recommendation modal__recommendation--error">Проверьте поля, выделенные красным, скорее всего Вы забыли их заполнить</p>
       <button class="modal__button modal__button--error button" type="button">Ok</button>
     </section>
@@ -194,7 +195,7 @@
       </div>
     </section>
   </div>
-  <script src="js/menu.js"></script>
+  <script src="js/menu-index.js"></script>
 </body>
 
 </html>

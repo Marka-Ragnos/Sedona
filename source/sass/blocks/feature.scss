@@ -82,13 +82,17 @@
   padding-top: 14px;
 }
 
-.feature__hidden-mobile-tablet {
+.feature__hidden-mobile {
   display: none;
 }
 
 @media (min-width: $tablet-width) {
   .feature {
     margin: 0;
+  }
+
+  .feature__hidden-mobile {
+    display: inline;
   }
 
   .feature__item {
@@ -174,9 +178,5 @@
 
   .feature__hidden-desktop {
     display: none;
-  }
-
-  .feature__hidden-mobile-tablet {
-    display: inline;
   }
 }

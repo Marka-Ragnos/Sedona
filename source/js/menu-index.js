@@ -23,10 +23,3 @@ toggle.addEventListener("click", function () {
     logo.classList.add("page-header__logo-image--closed");
   }
 });
-
-// window.addEventListener("load", function () {
-//   var myLinks = document.querySelectorAll("site-list a");
-//   for (var i = 0; i < myLinks.length; i++)
-//     if (location.href == myLinks[i].href)
-//       myLinks[i].parentNode.classList.add("site-list__item--active");
-// });
