@@ -12,6 +12,7 @@
   background-position: bottom;
   display: flex;
   justify-content: center;
+  background-color: saturate(lighten($blue, 10%), 20%);
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-back-mobile@2x.jpg");

@@ -30,6 +30,7 @@
 
 .reasons__big-item {
   width: 100%;
+  background-color: $blue;
 }
 
 .reasons__big-title {
@@ -176,7 +177,8 @@
 
   .reasons__big-item {
     display: flex;
-    height: 256px;
+    // height: 256px;
+    min-height: 256px;
 
     &--bridge {
       flex-direction: row-reverse;
@@ -255,6 +257,10 @@
   .reasons__title {
     padding-left: 82px;
     padding-right: 82px;
+  }
+
+  .reasons__big-text {
+    padding-bottom: 36px;
   }
 
   .reasons__text--center {
