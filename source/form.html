@@ -86,7 +86,7 @@
             <p class="form__title form__title--contacts">Контактная информация:</p>
             <label class="form__label form__label--contacts" for="tel"><span class="form__label-desktop">Контактный&nbsp;</span>телефон*:</label>
             <div class="form__input-wrapper form__input-wrapper--tel">
-              <input class="form__input form__input--contacts" id="tel" type="tel" name="tel" placeholder="Введите телефон" required>
+              <input class="form__input form__input--contacts" id="tel" type="tel" pattern="[0-9]{10}" title="Введите десятизначный номер, проект Седона это Вам не хухры-мухры!" name="tel" placeholder="Введите телефон" required>
             </div>
             <label class="form__label form__label--contacts" for="email">Электронная почта*:</label>
             <div class="form__input-wrapper form__input-wrapper--email">
